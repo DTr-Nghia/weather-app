@@ -9,7 +9,7 @@ import {
 } from "../actions";
 
 const URL2 = "https://api.openweathermap.org/data/2.5/weather";
-const key = "b7826da171eb98af87e75925d0973bb8";
+const key = process.env.REACT_APP_WEATHER_API_KEY;
 const SearchContext = React.createContext();
 const initialValue = {
   data_by_name: [],
@@ -19,6 +19,7 @@ const initialValue = {
   error: "",
 };
 export const SearchProvider = ({ children }) => {
+  console.log(key)
   const [state, dispatch] = useReducer(reducer, initialValue);
   const updateSearch = (name) => {
       dispatch({ type: UPDATE_SEARCH, payload: name });

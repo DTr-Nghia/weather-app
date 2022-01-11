@@ -5,7 +5,7 @@ import { useSearchContext } from "./SearchContext";
 import { GET_DATA, GET_DATA_SUCCESS, GET_DATA_ERROR } from "../actions";
 
 const URL1 = "https://api.openweathermap.org/data/2.5/onecall";
-const key = "b7826da171eb98af87e75925d0973bb8";
+const key = process.env.REACT_APP_WEATHER_API_KEY;
 const initialValue = {
   data: [],
   loading: false,

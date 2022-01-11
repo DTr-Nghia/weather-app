@@ -111,10 +111,6 @@ const Wrapper = styled.div`
             font-size: 1.75rem;
             color: #6c757d;
             font-weight: 700;
-            p {
-              margin-bottom: 1rem;
-              margin-top: 0;
-            }
           }
           .time-param {
             font-size: 1.5rem;
