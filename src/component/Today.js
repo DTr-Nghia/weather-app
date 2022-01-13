@@ -85,6 +85,10 @@ const Wrapper = styled.div`
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
+  p {
+    margin-bottom: 0.65rem;
+    margin-top: 0;
+  }
   .today-contents {
     display: flex;
     flex-wrap: wrap;
