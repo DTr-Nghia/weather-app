@@ -19,7 +19,6 @@ const initialValue = {
   error: "",
 };
 export const SearchProvider = ({ children }) => {
-  console.log(key)
   const [state, dispatch] = useReducer(reducer, initialValue);
   const updateSearch = (name) => {
       dispatch({ type: UPDATE_SEARCH, payload: name });
