@@ -88,7 +88,7 @@ textarea {
     transform: rotate(360deg);
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 320px) {
   .container {
     max-width: 540px;
   }
